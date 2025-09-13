@@ -120,14 +120,11 @@ const WorkerLogin = () => {
                   onChange={handleChange}
                   maxLength={loginType === "aadhar" ? 12 : 14}
                   placeholder={
-                    loginType === "aadhar" ? "123456789012" : "12345678901234"
+                    loginType === "aadhar" ? "XXXXXXXXXXXX" : "XXXXXXXXXXXXXX"
                   }
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   required
                 />
-                <p className="text-xs text-gray-500 mt-1">
-                  {loginType === "aadhar" ? "12 digits" : "14 digits"}
-                </p>
               </div>
 
               <div>
